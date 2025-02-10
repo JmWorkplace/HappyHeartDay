@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Card</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-images">
+        <div class="bg-box bg1"></div>
+        <div class="bg-box bg2"></div>
+        <div class="bg-box bg3"></div>
+        <div class="bg-box bg4"></div>
+    </div>
+    <div class="container">
+        <div class="envelope" onclick="toggleCards()">
+            <img src="images/hello.jpg" alt="Birthday Envelope">
+            <span class="click-text">Click Me!</span>
+            <div class="card card1">
+                <h2>🎉 Happy Birthday! 🎂</h2>
+                <p class="message">Happy Birthday baby! Wish you all the best sana hwag kapa mamatay hehe</p>
+            </div>
+            <div class="card card2">
+                <h2>🌹 Another Surprise! 🌸</h2>
+                <p class="message">This maybe a bit tacky way to ask but, will you be my Valentine?</p>
+            </div>
+        </div>
+    </div>
+    <audio id="birthday-audio" src="designs/happy birthday nayeon.mp3"></audio>
+    <video id="balloon-video" src="designs/hbd.mp4" class="hidden" autoplay muted></video>
+    <script src="script.js"></script>
+</body>
+</html>
